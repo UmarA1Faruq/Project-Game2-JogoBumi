@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="1">Home_LO</layout>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/HomeAsset/" />
+        <folder expanded="0" path="object-folder/GameEasyAsset/" />
+        <folder expanded="1" path="object-folder/GameMediumAsset/" />
+        <folder expanded="0" path="object-folder/GameHardAsset/" />
+        <folder expanded="0" path="object-folder/LevelListAsset/" />
+        <folder expanded="0" path="object-folder/Game_Info/" />
+        <folder expanded="0" path="object-folder/TimAsset/" />
+        <folder expanded="0" path="object-folder/TutorAsset/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Easy/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Medium/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Hard/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/HomeScreen/" />
+        <folder expanded="1" path="animation-folder/judul/" />
+        <folder expanded="1" path="animation-folder/Profile/" />
+        <folder expanded="1" path="animation-folder/TbAnOrganik/" />
+        <folder expanded="1" path="animation-folder/TbMulai/" />
+        <folder expanded="1" path="animation-folder/TbSetting/" />
+        <folder expanded="1" path="animation-folder/TsOrganik/" />
+        <folder expanded="1" path="animation-folder/loading/" />
+        <folder expanded="1" path="animation-folder/buttonlogout/" />
+        <folder expanded="1" path="animation-folder/AssetHomeCopy/" />
+        <folder expanded="1" path="animation-folder/Board2/" />
+        <folder expanded="1" path="animation-folder/TbInfo/" />
+        <folder expanded="1" path="animation-folder/TbMusik/" />
+        <folder expanded="1" path="animation-folder/TbProfil/" />
+        <folder expanded="1" path="animation-folder/judul2/" />
+        <folder expanded="1" path="animation-folder/TSAnorganikEasy/" />
+        <folder expanded="1" path="animation-folder/TSOrganikEasy/" />
+        <folder expanded="1" path="animation-folder/SAnorganikEasy/" />
+        <folder expanded="1" path="animation-folder/PosEasy_1/" />
+        <folder expanded="1" path="animation-folder/PosEasy_2/" />
+        <folder expanded="1" path="animation-folder/PosEasy_3/" />
+        <folder expanded="1" path="animation-folder/PosEasy_4/" />
+        <folder expanded="1" path="animation-folder/SOrganikEasy/" />
+        <folder expanded="1" path="animation-folder/ScoreBoardEasy/" />
+        <folder expanded="1" path="animation-folder/PauseButtonEasy/" />
+        <folder expanded="1" path="animation-folder/popUpEasy/" />
+        <folder expanded="1" path="animation-folder/GOBoardEasy/" />
+        <folder expanded="1" path="animation-folder/TbHomeGS/" />
+        <folder expanded="1" path="animation-folder/levelEasy/" />
+        <folder expanded="1" path="animation-folder/pauseeasy/" />
+        <folder expanded="1" path="animation-folder/TbResetEasy/" />
+        <folder expanded="1" path="animation-folder/TbHomeEasy/" />
+        <folder expanded="1" path="animation-folder/easyx/" />
+        <folder expanded="1" path="animation-folder/GameOverEasy/" />
+        <folder expanded="1" path="animation-folder/menangeasy/" />
+        <folder expanded="1" path="animation-folder/GOBoardEasy2/" />
+        <folder expanded="1" path="animation-folder/TbResetEasy2/" />
+        <folder expanded="1" path="animation-folder/TSAnorganikMedium/" />
+        <folder expanded="1" path="animation-folder/TSOrganikMedium/" />
+        <folder expanded="1" path="animation-folder/SAnorganikMedium/" />
+        <folder expanded="1" path="animation-folder/SOrganikMedium/" />
+        <folder expanded="1" path="animation-folder/PosMedium_1/" />
+        <folder expanded="1" path="animation-folder/PosMedium_2/" />
+        <folder expanded="1" path="animation-folder/PosMedium_3/" />
+        <folder expanded="1" path="animation-folder/PosMedium_4/" />
+        <folder expanded="1" path="animation-folder/PosMedium_5/" />
+        <folder expanded="1" path="animation-folder/PosMedium_6/" />
+        <folder expanded="1" path="animation-folder/PosMedium_7/" />
+        <folder expanded="1" path="animation-folder/PosMedium_8/" />
+        <folder expanded="1" path="animation-folder/TimerBoardMedium/" />
+        <folder expanded="1" path="animation-folder/ScoreBoardMedium/" />
+        <folder expanded="1" path="animation-folder/PauseButtonMedium/" />
+        <folder expanded="1" path="animation-folder/TbHomeGM/" />
+        <folder expanded="1" path="animation-folder/BoardGMKalah/" />
+        <folder expanded="1" path="animation-folder/GameOverGM/" />
+        <folder expanded="1" path="animation-folder/TbUlangiGMKalah/" />
+        <folder expanded="1" path="animation-folder/TbHomeGMKalah/" />
+        <folder expanded="1" path="animation-folder/BoardGMMenang/" />
+        <folder expanded="1" path="animation-folder/TbHomeGMMenang/" />
+        <folder expanded="1" path="animation-folder/TbUlangiGMMenang/" />
+        <folder expanded="1" path="animation-folder/menangGM/" />
+        <folder expanded="1" path="animation-folder/ScoreBoardHard/" />
+        <folder expanded="1" path="animation-folder/TimerBoardHard/" />
+        <folder expanded="1" path="animation-folder/BoxSampahHard/" />
+        <folder expanded="1" path="animation-folder/jenisSampahHard/" />
+        <folder expanded="1" path="animation-folder/lineWater/" />
+        <folder expanded="1" path="animation-folder/spawnerHard/" />
+        <folder expanded="1" path="animation-folder/gameOverHard/" />
+        <folder expanded="1" path="animation-folder/popUpHard/" />
+        <folder expanded="1" path="animation-folder/TbHomeHard/" />
+        <folder expanded="1" path="animation-folder/TbResetHard/" />
+        <folder expanded="1" path="animation-folder/GamerOverHard/" />
+        <folder expanded="1" path="animation-folder/PauseButtonHard/" />
+        <folder expanded="1" path="animation-folder/TbHomeGH/" />
+        <folder expanded="1" path="animation-folder/GOBoardHard/" />
+        <folder expanded="1" path="animation-folder/LevelListBoard/" />
+        <folder expanded="1" path="animation-folder/EasyLevelButton/" />
+        <folder expanded="1" path="animation-folder/MediumLevelButton/" />
+        <folder expanded="1" path="animation-folder/HardLevelButton/" />
+        <folder expanded="1" path="animation-folder/LevelListHomeButton/" />
+        <folder expanded="1" path="animation-folder/bginfo/" />
+        <folder expanded="1" path="animation-folder/buttonleft/" />
+        <folder expanded="1" path="animation-folder/buttonright/" />
+        <folder expanded="1" path="animation-folder/BoardInfo/" />
+        <folder expanded="1" path="animation-folder/caracter/" />
+        <folder expanded="1" path="animation-folder/TbHomeInfo/" />
+        <folder expanded="1" path="animation-folder/jogobumiinfo/" />
+        <folder expanded="1" path="animation-folder/pengantar/" />
+        <folder expanded="1" path="animation-folder/gamplay/" />
+        <folder expanded="1" path="animation-folder/TbHome_Tim/" />
+        <folder expanded="1" path="animation-folder/jogobumiTIM/" />
+        <folder expanded="1" path="animation-folder/anggota2/" />
+        <folder expanded="1" path="animation-folder/TbAnOrganikTim/" />
+        <folder expanded="1" path="animation-folder/TsOrganikTim/" />
+        <folder expanded="1" path="animation-folder/bgtutoreasy/" />
+        <folder expanded="1" path="animation-folder/btlefteasy/" />
+        <folder expanded="1" path="animation-folder/btmulaieasy/" />
+        <folder expanded="1" path="animation-folder/bgtutormedium/" />
+        <folder expanded="1" path="animation-folder/btleftmedium/" />
+        <folder expanded="1" path="animation-folder/btmulaimedium/" />
+        <folder expanded="1" path="animation-folder/btlefthard/" />
+        <folder expanded="1" path="animation-folder/btmulaihard/" />
+        <folder expanded="1" path="animation-folder/bgtutorhard/" />
+        <folder expanded="1" path="animation-folder/TbPlay/" />
+    </folders-expanded>
+</c2uistate>

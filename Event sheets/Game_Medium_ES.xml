@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Medium_ES</name>
+    <events>
+        <variable constant="0" name="timerMedium" sid="522558376643291" static="0" type="number">30</variable>
+        <variable constant="0" name="skorMedium" sid="602250072465217" static="0" type="number">0</variable>
+        <variable constant="0" name="countSampah" sid="973283397111154" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosY_Medium" sid="722786986232868" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosX_Medium" sid="856145233434367" static="0" type="number">0</variable>
+        <event-block sid="342495164698039">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="171141260266257" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="940356697554462" type="System" />
+                <action id="0" name="Call function" sid="936142355823260" type="Function">
+                    <param id="0" name="Name">&quot;init_medium&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="209076033176455">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="283211748406043" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="647495943171944" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="737490049100415">
+            <conditions>
+                <condition id="0" name="On function" sid="317586650134064" type="Function">
+                    <param id="0" name="Name">&quot;init_medium&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="647429164620422" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_1.X</param>
+                    <param id="3" name="Y">PosMedium_1.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="763710784235802" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_2.X</param>
+                    <param id="3" name="Y">PosMedium_2.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="139067855532418" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_3.X</param>
+                    <param id="3" name="Y">PosMedium_3.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="862185573708605" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_4.X</param>
+                    <param id="3" name="Y">PosMedium_4.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="219623810787640" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_5.X</param>
+                    <param id="3" name="Y">PosMedium_5.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="936577882845328" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_6.X</param>
+                    <param id="3" name="Y">PosMedium_6.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="603571993339658" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_7.X</param>
+                    <param id="3" name="Y">PosMedium_7.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="814560746642000" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_8.X</param>
+                    <param id="3" name="Y">PosMedium_8.Y</param>
+                </action>
+                <action id="33" name="Stop all" sid="398504533624878" type="Audio" />
+                <action id="0" name="Play" sid="123676036962875" type="Audio">
+                    <param id="0" name="Audio file">medium</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622760683134058">
+            <conditions>
+                <condition id="-18" name="On created" sid="164041244140745" type="SAnorganikMedium" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="776103642870695" type="SAnorganikMedium">
+                    <param id="0" name="Frame number">int(random(0,4))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="654953021339565">
+            <conditions>
+                <condition id="-18" name="On created" sid="249507521624341" type="SOrganikMedium" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="329217403729713" type="SOrganikMedium">
+                    <param id="0" name="Frame number">int(random(0,4))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363783964268533">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="591887694417191" type="SAnorganikMedium" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="233172951494174" type="System">
+                    <param id="0" name="Variable">lastPosX_Medium</param>
+                    <param id="1" name="Value">SAnorganikMedium.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="574812386366873" type="System">
+                    <param id="0" name="Variable">lastPosY_Medium</param>
+                    <param id="1" name="Value">SAnorganikMedium.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="850940947149193">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="500085310619028" type="SAnorganikMedium" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="894199089162263">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="873991784783350" type="SAnorganikMedium">
+                            <param id="0" name="Object">TSAnorganikMedium</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="558830346723266" type="SAnorganikMedium" />
+                        <action id="-10" name="Add to" sid="837074130410950" type="System">
+                            <param id="0" name="Variable">countSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="371554845929134" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Call function" sid="493043337533854" type="Function">
+                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="450402154352497" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="715403649544211" type="SAnorganikMedium">
+                            <param id="0" name="Object">ParticlesMedium</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556939538416309">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="181610165346116" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="943230122276887" type="SAnorganikMedium">
+                            <param id="0" name="X">lastPosX_Medium</param>
+                            <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="556305611544012" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Play" sid="222722792720479" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="552348372679889">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="512495415596966" type="SOrganikMedium" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="374045585095505" type="System">
+                    <param id="0" name="Variable">lastPosX_Medium</param>
+                    <param id="1" name="Value">SOrganikMedium.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="865662059534121" type="System">
+                    <param id="0" name="Variable">lastPosY_Medium</param>
+                    <param id="1" name="Value">SOrganikMedium.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586921172055122">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="735589540123822" type="SOrganikMedium" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="642867422930286">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="933687612546724" type="SOrganikMedium">
+                            <param id="0" name="Object">TSOrganikMedium</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="283076905352950" type="SOrganikMedium" />
+                        <action id="-10" name="Add to" sid="367632001444253" type="System">
+                            <param id="0" name="Variable">countSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="479251970234352" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Call function" sid="890510096434466" type="Function">
+                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="801494324929429" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="137251958729103" type="SOrganikMedium">
+                            <param id="0" name="Object">ParticlesMedium</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169104522605143">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="404094869198112" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="347648112272700" type="SOrganikMedium">
+                            <param id="0" name="X">lastPosX_Medium</param>
+                            <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="919587629954034" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Play" sid="335220172235335" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="127289223129960">
+            <conditions>
+                <condition id="0" name="On function" sid="614858945444532" type="Function">
+                    <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="434566954628991">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="198226463625432" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">80</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="527395757035120" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="415755506284775" type="Function">
+                            <param id="0" name="Name">&quot;pop-in5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-9" name="Set value" sid="993307845064507" type="System">
+                            <param id="0" name="Variable">timerMedium</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="324276649087493">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="979705673408391" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="569401125573969" type="System">
+                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="106386347398544" type="Function">
+                    <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="250340938897783" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="991048679905322">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="819089613114761" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="828315678323746" type="TxScoreMedium">
+                    <param id="0" name="Text">skorMedium</param>
+                </action>
+                <action id="0" name="Set text" sid="265262020550198" type="TxTimerMedium">
+                    <param id="0" name="Text">timerMedium</param>
+                </action>
+                <action id="0" name="Set text" sid="873079185724226" type="TxScoreGMKalah">
+                    <param id="0" name="Text">skorMedium</param>
+                </action>
+                <action id="0" name="Set text" sid="878361532317161" type="TxScoreGMMenang">
+                    <param id="0" name="Text">skorMedium</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="290220284165542" title="Setting GM Kalah">
+            <sub-events>
+                <event-block sid="845569409299782">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="352614060039372" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="359154785353039" type="GameOverGM">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="801307944074801" type="TbHomeGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="647177011912297" type="TbUlangiGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="319488310678599" type="TxScoreGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="380690605725905" type="TxSkorKamuGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="442778984048522" type="BoardGMKalah">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="364286498880261" type="System">
+                            <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="252624257476381">
+                    <conditions>
+                        <condition id="0" name="On function" sid="496031332433507" type="Function">
+                            <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="171581321243314" type="BoardGMKalah">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="986811750829533" type="BoardGMKalah">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="967168924512888" type="BoardGMKalah">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="719660288724714">
+                    <conditions>
+                        <condition id="0" name="On function" sid="853598985534029" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="685065371523148" type="BoardGMKalah">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="667785605114368" type="BoardGMKalah">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="927135949213940" type="BoardGMKalah">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="127011995898421">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="334376303525066" type="System">
+                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="286916319606893">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="118393217475628" type="Touch">
+                            <param id="0" name="Object">TbHomeGMKalah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="944424545501860" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="893399173607200" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="743075097228990" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="655708990729442" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="294334113007217" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="433965333514158">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="203334947689874" type="Touch">
+                            <param id="0" name="Object">TbUlangiGMKalah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="483089607420594" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="645502665290622" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="125040973187565" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="333397394371903" type="System" />
+                        <action id="-4" name="Set layer visible" sid="120888526387433" type="System">
+                            <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="118960773634644">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="560557926768319" type="System">
+                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="928251910235602">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="348337322833951" type="Touch">
+                            <param id="0" name="Object">TbHomeGM</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="502777381002276" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="989774795051807" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="614641234099477" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="438956815086463" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="518944884852972" title="Setting GM Menang">
+            <sub-events>
+                <event-block sid="236365988870877">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="125182952727993" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="232055424986936" type="menangGM">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="797304991693637" type="TbUlangiGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="574082695066953" type="TbHomeGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="917096039886113" type="TxSkorKamuGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="641593249500694" type="TxScoreGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="680712632834885" type="BoardGMMenang">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="816429855664689" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="535831019890988">
+                    <conditions>
+                        <condition id="0" name="On function" sid="606162843806129" type="Function">
+                            <param id="0" name="Name">&quot;pop-in5&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="600017586516079" type="BoardGMMenang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="481814659739771" type="BoardGMMenang">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="556483839720899" type="BoardGMMenang">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996700073981989">
+                    <conditions>
+                        <condition id="0" name="On function" sid="137416618880868" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="546704805202263" type="BoardGMMenang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="942785053768880" type="BoardGMMenang">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="468446429499283" type="BoardGMMenang">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="321657876322419">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="497072405620501" type="System">
+                    <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="532459954694836">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="569684521055135" type="Touch">
+                            <param id="0" name="Object">TbHomeGMMenang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="771340307260511" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="775608768233767" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="278863164933407" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="660400841645762" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="704053981953641" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="483599446578430">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="649117213961907" type="Touch">
+                            <param id="0" name="Object">TbUlangiGMMenang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="958436351347423" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="994033900834977" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="788981921877134" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="122876328026630" type="System" />
+                        <action id="-4" name="Set layer visible" sid="941546408427369" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="603242048842140">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="636075089610904" type="System">
+                    <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="943972195443668">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="526091714388829" type="Touch">
+                            <param id="0" name="Object">TbHomeGM</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="188110221080150" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="180785478141999" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="364823603960030" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="672124423173717" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Hard_ES</name>
+    <events>
+        <variable constant="0" name="timerHard" sid="261909133915788" static="0" type="number">60</variable>
+        <variable constant="0" name="skorHard" sid="123117140843375" static="0" type="number">0</variable>
+        <event-block sid="902830875901205">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="184856201799982" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="185400951052736" type="Audio" />
+                <action id="0" name="Play" sid="502909510810295" type="Audio">
+                    <param id="0" name="Audio file">hard</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="834489421951140" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="810037419674931">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="528533931948968" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="205271840079870" type="System">
+                    <param id="0" name="Variable">timerHard</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840749796474122">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="841941579622193" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="327957425528253" type="spawnerHard">
+                    <param id="0" name="Object">jenisSampahHard</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746891011872773">
+            <conditions>
+                <condition id="-18" name="On created" sid="850255296127253" type="jenisSampahHard" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="951119616758618" type="jenisSampahHard">
+                    <param id="0" name="Frame number">random(11)</param>
+                </action>
+                <action id="-10" name="Set value" sid="165962882636990" type="jenisSampahHard">
+                    <param id="0" name="Instance variable">posY</param>
+                    <param id="1" name="Value">Self.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="148988651818213">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="868420425548479" type="jenisSampahHard">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="197477019215284" type="jenisSampahHard">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="546809743328863">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="513455640967659" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="581405906044312" type="jenisSampahHard">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="630625344680507" title="Drag &amp; Drop" />
+        <event-block sid="587559135366192">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="329096534568160" type="jenisSampahHard" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="239902615262908">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="288879503806785" type="jenisSampahHard">
+                            <param id="0" name="Object">BoxSampahHard</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="700891102343971">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="704660064491236" type="jenisSampahHard">
+                                    <param id="0" name="Instance variable">jenisSampah</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">BoxSampahHard.jenisTempatHard</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="904105036204146" type="jenisSampahHard" />
+                                <action id="-10" name="Add to" sid="593620290720273" type="System">
+                                    <param id="0" name="Variable">skorHard</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                                <action id="0" name="Play" sid="909073468567634" type="Audio">
+                                    <param id="0" name="Audio file">sound-right</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="707469054199937" type="jenisSampahHard">
+                                    <param id="0" name="Object">ParticlesHard</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="992382227516201">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="674670252738307" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="855654479939185" type="System">
+                                    <param id="0" name="Variable">skorHard</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="249752557376581" type="jenisSampahHard">
+                                    <param id="0" name="Y">Self.posY</param>
+                                </action>
+                                <action id="0" name="Play" sid="144328969983624" type="Audio">
+                                    <param id="0" name="Audio file">sound-wrong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="963859508226019">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="296449387722497" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="392788425519146" type="jenisSampahHard">
+                            <param id="0" name="Y">Self.posY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="816165854345541" title="Game Over">
+            <sub-events>
+                <event-block sid="532417471512709">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="591578329885956" type="jenisSampahHard">
+                            <param id="0" name="Object">gameOverHard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="602847363823118" type="jenisSampahHard" />
+                        <action id="-4" name="Set layer visible" sid="335086888612119" type="System">
+                            <param id="0" name="Layer">&quot;GameOverHard&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="445320602769764" type="Function">
+                            <param id="0" name="Name">&quot;pop-in3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="33" name="Stop all" sid="235183103985261" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="302624267263446">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="655471504468308" type="System">
+                            <param id="0" name="Variable">timerHard</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="174774813798313" type="System">
+                            <param id="0" name="Layer">&quot;GameOverHard&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="505786291365246" type="Function">
+                            <param id="0" name="Name">&quot;pop-in3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-9" name="Set value" sid="492847464474322" type="System">
+                            <param id="0" name="Variable">timerHard</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="777274043473201" type="Audio" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="848068779772863">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="970703941532275" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="548840134216837" type="TxSkorHard">
+                    <param id="0" name="Text">skorHard</param>
+                </action>
+                <action id="0" name="Set text" sid="562976760150859" type="TxTimerHard">
+                    <param id="0" name="Text">timerHard</param>
+                </action>
+                <action id="0" name="Set text" sid="110536779169666" type="TxSkorHard2">
+                    <param id="0" name="Text">skorHard</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="995304267772577" title="GameOverHardSetting">
+            <sub-events>
+                <event-block sid="923352205886610">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="581346623567198" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="311061208741232" type="GamerOverHard">
+                            <param id="0" name="Pin to">GOBoardHard</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="994510187811406" type="TbResetHard">
+                            <param id="0" name="Pin to">GOBoardHard</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="358879047313166" type="TbHomeHard">
+                            <param id="0" name="Pin to">GOBoardHard</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="992287929028463" type="TxSkorHard2">
+                            <param id="0" name="Pin to">GOBoardHard</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="551280003625807" type="TxSkorResultHard">
+                            <param id="0" name="Pin to">GOBoardHard</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="105326871139685" type="GOBoardHard">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="693358826660403" type="System">
+                            <param id="0" name="Layer">&quot;GameOverHard&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751122173997845">
+                    <conditions>
+                        <condition id="0" name="On function" sid="204198427888590" type="Function">
+                            <param id="0" name="Name">&quot;pop-in3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="544442616931204" type="GOBoardHard">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="370741481590584" type="GOBoardHard">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="206231552030074" type="GOBoardHard">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="205517396495861">
+                    <conditions>
+                        <condition id="0" name="On function" sid="369299056092386" type="Function">
+                            <param id="0" name="Name">&quot;pop-out3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="279355938943044" type="GOBoardHard">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="227503476197794" type="GOBoardHard">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="741249507056299" type="GOBoardHard">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="377784163696239">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="769118997249856" type="System">
+                    <param id="0" name="Layer">&quot;GameOverHard&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="897861141835064">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="344996108860361" type="Touch">
+                            <param id="0" name="Object">TbHomeHard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="205141564905510" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="523379962653697" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="725317476664231" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="948806175020007" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="282392280857945">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="721438250552646" type="Touch">
+                            <param id="0" name="Object">TbResetHard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="355703549152101" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="359425028011000" type="Function">
+                            <param id="0" name="Name">&quot;pop-out3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="642099245511708" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="269600730982477" type="System" />
+                        <action id="-4" name="Set layer visible" sid="304109910666280" type="System">
+                            <param id="0" name="Layer">&quot;GameOverHard&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

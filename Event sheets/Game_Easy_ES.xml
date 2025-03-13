@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Easy_ES</name>
+    <events>
+        <variable constant="0" name="skorEasy" sid="198933550858631" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosY_Easy" sid="662369252003613" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosX_Easy" sid="460722436878696" static="0" type="number">0</variable>
+        <event-block sid="497555725077626">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="155769547615130" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="439893240714908" type="System" />
+                <action id="0" name="Call function" sid="748393019997030" type="Function">
+                    <param id="0" name="Name">&quot;init_easy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="208727227099278">
+            <conditions>
+                <condition id="0" name="On function" sid="817029849275447" type="Function">
+                    <param id="0" name="Name">&quot;init_easy&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="842724645436993" type="System">
+                    <param id="0" name="Object to create">SAnorganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_1.X</param>
+                    <param id="3" name="Y">PosEasy_1.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="812505081261159" type="System">
+                    <param id="0" name="Object to create">SOrganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_2.X</param>
+                    <param id="3" name="Y">PosEasy_2.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="727660766306265" type="System">
+                    <param id="0" name="Object to create">SAnorganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_3.X</param>
+                    <param id="3" name="Y">PosEasy_3.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="845374975013978" type="System">
+                    <param id="0" name="Object to create">SOrganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_4.X</param>
+                    <param id="3" name="Y">PosEasy_4.Y</param>
+                </action>
+                <action id="33" name="Stop all" sid="806942099103854" type="Audio" />
+                <action id="0" name="Play" sid="626985427414944" type="Audio">
+                    <param id="0" name="Audio file">easy</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="715468962506060">
+            <conditions>
+                <condition id="-18" name="On created" sid="166428487928011" type="SAnorganikEasy" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="761412086415603" type="SAnorganikEasy">
+                    <param id="0" name="Frame number">int(random(0,2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="603310216016533">
+            <conditions>
+                <condition id="-18" name="On created" sid="289129061861908" type="SOrganikEasy" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="104180159608334" type="SOrganikEasy">
+                    <param id="0" name="Frame number">int(random(0,2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913085469828110">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="954469527819824" type="SAnorganikEasy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="744974111611564" type="System">
+                    <param id="0" name="Variable">lastPosX_Easy</param>
+                    <param id="1" name="Value">SAnorganikEasy.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="372737926374076" type="System">
+                    <param id="0" name="Variable">lastPosY_Easy</param>
+                    <param id="1" name="Value">SAnorganikEasy.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="684972871942016">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="187622964717685" type="SAnorganikEasy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="571664230144100">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="566122575941071" type="SAnorganikEasy">
+                            <param id="0" name="Object">TSAnorganikEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="111184261114539" type="SAnorganikEasy" />
+                        <action id="-10" name="Add to" sid="576783877721248" type="System">
+                            <param id="0" name="Variable">skorEasy</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="743215730862723" type="Function">
+                            <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="347495625900469" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="543543689394733" type="SAnorganikEasy">
+                            <param id="0" name="Object">ParticlesEasy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="494246062713287">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="811797237772010" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="474676652699411" type="SAnorganikEasy">
+                            <param id="0" name="X">lastPosX_Easy</param>
+                            <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                        <action id="0" name="Play" sid="561211243706068" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="368621180314966">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="458051749964982" type="SOrganikEasy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="309053702821645" type="System">
+                    <param id="0" name="Variable">lastPosX_Easy</param>
+                    <param id="1" name="Value">SOrganikEasy.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="878711636371318" type="System">
+                    <param id="0" name="Variable">lastPosY_Easy</param>
+                    <param id="1" name="Value">SOrganikEasy.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="335549755875462">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="255856273269408" type="SOrganikEasy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="418944123153270">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="236108304047517" type="SOrganikEasy">
+                            <param id="0" name="Object">TSOrganikEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="913248224053963" type="SOrganikEasy" />
+                        <action id="-10" name="Add to" sid="647868277875765" type="System">
+                            <param id="0" name="Variable">skorEasy</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="965854628238563" type="Function">
+                            <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="430781701021464" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="118307621697533" type="SOrganikEasy">
+                            <param id="0" name="Object">ParticlesEasy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="613459259732613">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="929542147432655" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="466915632424809" type="SOrganikEasy">
+                            <param id="0" name="X">lastPosX_Easy</param>
+                            <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                        <action id="0" name="Play" sid="569430035488957" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="147645391110820">
+            <conditions>
+                <condition id="0" name="On function" sid="235574483288019" type="Function">
+                    <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="848184946806697">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="502850209202725" type="System">
+                            <param id="0" name="Variable">skorEasy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="976584692811029" type="System">
+                            <param id="0" name="Layer">&quot;Selesaieasy&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="294260430044267" type="Function">
+                            <param id="0" name="Name">&quot;pop-in2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="318252040000911">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="812208531333399" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="743462304117043" type="TxSkorEasy">
+                    <param id="0" name="Text">skorEasy</param>
+                </action>
+                <action id="0" name="Set text" sid="904204735769083" type="TxSkorPauseEasy">
+                    <param id="0" name="Text">skorEasy</param>
+                </action>
+                <action id="0" name="Set text" sid="900747309133383" type="TxSkorEasy2">
+                    <param id="0" name="Text">skorEasy</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="622015662961501" title="PauseSetting">
+            <sub-events>
+                <event-block sid="842940588830516">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="816279177035905" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="868701310837969" type="easyx">
+                            <param id="0" name="Pin to">GOBoardEasy</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="697200352356372" type="TbResetEasy">
+                            <param id="0" name="Pin to">GOBoardEasy</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="116969480704149" type="pauseeasy">
+                            <param id="0" name="Pin to">GOBoardEasy</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="918822631478191" type="TxSkorResultEasy">
+                            <param id="0" name="Pin to">GOBoardEasy</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="283959322833278" type="TxSkorPauseEasy">
+                            <param id="0" name="Pin to">GOBoardEasy</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="461043952303374" type="GOBoardEasy">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="238865804574652" type="System">
+                            <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849088244670500">
+                    <conditions>
+                        <condition id="0" name="On function" sid="929034723036880" type="Function">
+                            <param id="0" name="Name">&quot;pop-in&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="451036359991129" type="GOBoardEasy">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="820647456008821" type="GOBoardEasy">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="964107644241282" type="GOBoardEasy">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="382338503727685">
+                    <conditions>
+                        <condition id="0" name="On function" sid="776538579191464" type="Function">
+                            <param id="0" name="Name">&quot;pop-out&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="425646795286467" type="GOBoardEasy">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="662676082560417" type="GOBoardEasy">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="998177194824164" type="GOBoardEasy">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="621585353471902">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="430017899374872" type="Touch">
+                            <param id="0" name="Object">PauseButtonEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="108401185313241" type="System">
+                            <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="206198846347967" type="Function">
+                            <param id="0" name="Name">&quot;pop-in&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="438861347205040" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="556254147725863">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="530129497947467" type="System">
+                    <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="370357356406289">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="121767164089426" type="Touch">
+                            <param id="0" name="Object">easyx</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="625546424413164" type="Function">
+                            <param id="0" name="Name">&quot;pop-out&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="256691475546919" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="363472821543341" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="769921104915339" type="System">
+                            <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="358494988716117">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="158102100287344" type="Touch">
+                            <param id="0" name="Object">TbResetEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="502541206209747" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="164604142158477" type="Function">
+                            <param id="0" name="Name">&quot;pop-out&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="589380783488450" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="853020952742199" type="System" />
+                        <action id="-4" name="Set layer visible" sid="729844480081785" type="System">
+                            <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="620803905736199">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="961016226488048" type="System">
+                    <param id="0" name="Layer">&quot;PauseEasy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="821316472345381">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="606245109394929" type="Touch">
+                            <param id="0" name="Object">TbHomeGS</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="923933112310921" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="759123791306156" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="759324545532155" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="848515687148482" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="478349931665262" title="SelesaiSetting">
+            <sub-events>
+                <event-block sid="321636791038043">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="346145136709201" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="340883292622363" type="TbResetEasy2">
+                            <param id="0" name="Pin to">GOBoardEasy2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="531938262621042" type="TbHomeEasy">
+                            <param id="0" name="Pin to">GOBoardEasy2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="732544194606775" type="menangeasy">
+                            <param id="0" name="Pin to">GOBoardEasy2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="960059099403184" type="TxSkorEasy2">
+                            <param id="0" name="Pin to">GOBoardEasy2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="284699497466648" type="GOBoardEasy2">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="185305204256289" type="System">
+                            <param id="0" name="Layer">&quot;Selesaieasy&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="721552898519781">
+                    <conditions>
+                        <condition id="0" name="On function" sid="271182373929246" type="Function">
+                            <param id="0" name="Name">&quot;pop-in2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="748447568497621" type="GOBoardEasy2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="770257475446454" type="GOBoardEasy2">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="211767140554235" type="GOBoardEasy2">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="679314229653337">
+                    <conditions>
+                        <condition id="0" name="On function" sid="164808415288732" type="Function">
+                            <param id="0" name="Name">&quot;pop-out2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="537967343058141" type="GOBoardEasy2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="872871417284668" type="GOBoardEasy2">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="933352076350182" type="GOBoardEasy2">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="195954414207922">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="418026207641342" type="System">
+                    <param id="0" name="Layer">&quot;Selesaieasy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="387783563774042">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="896616412960414" type="Touch">
+                            <param id="0" name="Object">TbHomeEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="165736983928706" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="288563295355387" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="544079406373359" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="534149258785968" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="330856483448183">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="275849327806232" type="Touch">
+                            <param id="0" name="Object">TbResetEasy2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="632410396003998" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="920771337666671" type="Function">
+                            <param id="0" name="Name">&quot;pop-out2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="643495353642263" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="295361635546970" type="System" />
+                        <action id="-4" name="Set layer visible" sid="531916615094346" type="System">
+                            <param id="0" name="Layer">&quot;Selesaieasy&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
