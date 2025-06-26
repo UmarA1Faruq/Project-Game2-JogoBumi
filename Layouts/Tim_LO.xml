@@ -120,7 +120,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="anggota2" uid="104">
+                <instance type="ui_tim" uid="127">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -130,11 +130,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960.000061035</x>
-                        <y>564</y>
+                        <x>960</x>
+                        <y>540</y>
                         <z>0</z>
-                        <width>1648.07043457</width>
-                        <height>664.846618652</height>
+                        <width>1629.463378906</width>
+                        <height>657.340332031</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

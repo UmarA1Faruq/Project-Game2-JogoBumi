@@ -3,6 +3,32 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level_List_ES</name>
     <events>
+        <event-block sid="244523601909776">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="562326762367671" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="587104415449381">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="274046664467159" type="Audio">
+                            <param id="0" name="Tag">&quot;lagu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="810206457529592" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="546770284768658" type="Audio">
+                            <param id="0" name="Audio file">MainBGM</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;lagu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="949851208871776">
             <conditions>
                 <condition id="17" name="On tap object" sid="901459968766484" type="Touch">

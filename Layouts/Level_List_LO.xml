@@ -29,22 +29,24 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BG_LevelList" uid="60">
+                <instance type="peta_game" uid="128">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-11</x>
-                        <y>-8</y>
+                        <x>960</x>
+                        <y>542</y>
                         <z>0</z>
                         <width>1937</width>
                         <height>1091</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -68,28 +70,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="LevelListBoard" uid="66">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>933</x>
-                        <y>536</y>
-                        <z>0</z>
-                        <width>1696.842895508</width>
-                        <height>1286.028320313</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="EasyLevelButton" uid="69">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -115,41 +95,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
-                        <y>579</y>
+                        <x>402</x>
+                        <y>289</y>
                         <z>0</z>
-                        <width>247.260314941</width>
-                        <height>262.189239502</height>
+                        <width>151.465621948</width>
+                        <height>160.610717773</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="TxTitleLevelBoardList" uid="68">
-                    <properties>
-                        <text>Silahkan Pilih Level</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Black,-48,900,0</font>
-                        <color>255,153,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>676.5</x>
-                        <y>331</y>
-                        <z>0</z>
-                        <width>567</width>
-                        <height>89</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -179,11 +132,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960</x>
-                        <y>583</y>
+                        <x>1095</x>
+                        <y>234</y>
                         <z>0</z>
-                        <width>247.259994507</width>
-                        <height>262.188995361</height>
+                        <width>153.718307495</width>
+                        <height>162.999465942</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -216,11 +169,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1288</x>
-                        <y>581</y>
+                        <x>584</x>
+                        <y>797</y>
                         <z>0</z>
-                        <width>247.259994507</width>
-                        <height>262.188995361</height>
+                        <width>165.454376221</width>
+                        <height>175.444137573</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -253,11 +206,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960.000061035</x>
-                        <y>907</y>
+                        <x>1826</x>
+                        <y>105</y>
                         <z>0</z>
-                        <width>192.848968506</width>
-                        <height>202.230804443</height>
+                        <width>153.115844727</width>
+                        <height>160.564712524</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

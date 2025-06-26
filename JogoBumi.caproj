@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -2346,6 +2347,125 @@
                 </object-type>
             </object-folder>
         </object-folder>
+        <object-folder name="UI">
+            <object-type name="ui_tim" sid="638727225206221">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702590082264276" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\anggota.png">
+                            <collision-poly>
+                                <point x="0.00408381" y="0.0101232" />
+                                <point x="0.995916" y="0.0101232" />
+                                <point x="0.995916" y="0.989877" />
+                                <point x="0.00408381" y="0.989877" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgtutor1" sid="865344451702036">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905180032385865" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\bg-tutor1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgtutor2" sid="805898664920114">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="190145708810264" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\bg-tutor-medium.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgtutor3" sid="106693836437470">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152742062799206" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\bg-tutor-hard.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pengantargm" sid="351985723528748">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="927238707186107" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\pengantar.png">
+                            <collision-poly>
+                                <point x="0.00408381" y="0.0101232" />
+                                <point x="0.995916" y="0.0101232" />
+                                <point x="0.995916" y="0.989877" />
+                                <point x="0.00408381" y="0.989877" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="gamplayr" sid="551115290556881">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281636753608599" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\gamplayr.png">
+                            <collision-poly>
+                                <point x="0.00408381" y="0.0101232" />
+                                <point x="0.995916" y="0.0101232" />
+                                <point x="0.995916" y="0.989877" />
+                                <point x="0.00408381" y="0.989877" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="peta_game" sid="559326602530322">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143366935198893" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\Game_Triler\peta_game.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="UIKarakter">
+            <object-type name="tara" sid="892296352789743">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396267762814439" speed="5">
+                        <frame duration="1" hotspotX="0.50048" hotspotY="0.500498" original-source="C:\Users\DELL\Pictures\Karakter-Game2\Group 26.png">
+                            <collision-poly>
+                                <point x="0.219981" y="0.227861" />
+                                <point x="0.49952" y="0.00696517" />
+                                <point x="0.728146" y="0.281592" />
+                                <point x="0.946206" y="0.499502" />
+                                <point x="0.884726" y="0.880597" />
+                                <point x="0.49952" y="0.983085" />
+                                <point x="0.10951" y="0.886567" />
+                                <point x="0.350624" y="0.499502" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="boci" sid="881726950720020">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886754529515138" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\boci-full-removebg-preview.png">
+                            <collision-poly>
+                                <point x="0.838235" y="0.5" />
+                                <point x="0.615196" y="0.743464" />
+                                <point x="0.5" y="0.818627" />
+                                <point x="0.406863" y="0.728758" />
+                                <point x="0.0514706" y="0.5" />
+                                <point x="0.333333" y="0.222222" />
+                                <point x="0.5" y="0.189542" />
+                                <point x="0.676471" y="0.215686" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TbPlay" sid="762587376853102">
             <plugin id="Sprite" />
             <animation-folder>
@@ -2366,8 +2486,39 @@
         <object-type name="Browser" sid="719281918875400">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="alurgame" sid="193743137484893">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="skipac" sid="817057781722202">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="skipbtn" sid="294803508919838">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700065939999694" speed="5">
+                    <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Group 10.png">
+                        <collision-poly>
+                            <point x="0.0532915" y="0.137097" />
+                            <point x="0.498433" y="0" />
+                            <point x="0.931035" y="0.177419" />
+                            <point x="0.968652" y="0.5" />
+                            <point x="0.915361" y="0.782258" />
+                            <point x="0.498433" y="0.919355" />
+                            <point x="0.0689655" y="0.822581" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Karakter_F" plugin-id="Sprite" sid="224298094432180">
+            <members>
+                <member>tara</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Game_Easy_LO.xml</layout>
         <layout>Home_LO.xml</layout>
@@ -2379,6 +2530,7 @@
         <layout>Tutor_Easy_LO.xml</layout>
         <layout>Tutor_Medium_LO.xml</layout>
         <layout>Tutor_Hard_LO.xml</layout>
+        <layout>Alur_Game_LO.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game_Easy_ES.xml</event-sheet>
@@ -2391,6 +2543,7 @@
         <event-sheet>Tutor_Easy_SE.xml</event-sheet>
         <event-sheet>Tutor_Medium_ES.xml</event-sheet>
         <event-sheet>Tutor_Hard_ES.xml</event-sheet>
+        <event-sheet>Alus_Game_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">
@@ -2435,5 +2588,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="trailer-game.webm" />
     </files-folder>
 </c2project>

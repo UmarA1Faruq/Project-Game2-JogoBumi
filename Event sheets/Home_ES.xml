@@ -474,7 +474,7 @@
                                     <param id="2" name="Value">Self.SaveY</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="758345197452921" type="System">
-                                    <param id="0" name="Layout">Level_List_LO</param>
+                                    <param id="0" name="Layout">Alur_Game_LO</param>
                                 </action>
                             </actions>
                         </event-block>

@@ -63,7 +63,7 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="304073043512200" type="gamplay">
+                        <action id="-15" name="Set visible" sid="304073043512200" type="gamplayr">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
@@ -81,7 +81,7 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="296439519948273" type="gamplay">
+                        <action id="-15" name="Set visible" sid="296439519948273" type="gamplayr">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>

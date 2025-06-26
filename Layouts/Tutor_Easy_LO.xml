@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="bgtutoreasy" uid="87">
+                <instance type="bgtutor1" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -40,10 +40,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
-                        <y>538.484375</y>
+                        <y>538.484008789</y>
                         <z>0</z>
-                        <width>1943.055541992</width>
-                        <height>1092.96875</height>
+                        <width>1943.056030273</width>
+                        <height>1092.968994141</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="bgtutorhard" uid="113">
+                <instance type="bgtutor3" uid="110">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -40,10 +40,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
-                        <y>541.428894043</y>
+                        <y>541.429016113</y>
                         <z>0</z>
-                        <width>1942.858276367</width>
-                        <height>1092.857788086</height>
+                        <width>1942.858032227</width>
+                        <height>1092.858032227</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -101,8 +101,8 @@
                         <width>139.38420105</width>
                         <height>141.536849976</height>
                         <depth>0</depth>
-                        <hotspotX>0.501929998</hotspotX>
-                        <hotspotY>0.501900971</hotspotY>
+                        <hotspotX>0.501930475</hotspotX>
+                        <hotspotY>0.50190115</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -138,7 +138,7 @@
                         <width>319</width>
                         <height>124</height>
                         <depth>0</depth>
-                        <hotspotX>0.501567006</hotspotX>
+                        <hotspotX>0.501567423</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

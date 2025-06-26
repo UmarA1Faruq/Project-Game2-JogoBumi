@@ -92,28 +92,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="caracter" uid="93">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1692</x>
-                        <y>802</y>
-                        <z>0</z>
-                        <width>478.393249512</width>
-                        <height>537.016296387</height>
-                        <depth>0</depth>
-                        <hotspotX>0.500756443</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="buttonright" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -252,7 +230,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pengantar" uid="98">
+                <instance type="pengantargm" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -262,11 +240,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960.000061035</x>
-                        <y>563</y>
+                        <x>972</x>
+                        <y>551</y>
                         <z>0</z>
                         <width>1127.359985352</width>
-                        <height>454.78729248</height>
+                        <height>454.786987305</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -274,7 +252,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gamplay" uid="99">
+                <instance type="gamplayr" uid="93">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -284,11 +262,55 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960.000061035</x>
-                        <y>569</y>
+                        <x>972</x>
+                        <y>549</y>
                         <z>0</z>
                         <width>1127.359985352</width>
                         <height>454.786987305</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="tara" uid="99">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1709</x>
+                        <y>731</y>
+                        <z>0</z>
+                        <width>750.521484375</width>
+                        <height>724.566833496</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500480294</hotspotX>
+                        <hotspotY>0.50049752</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="boci" uid="113">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>220</x>
+                        <y>819</y>
+                        <z>0</z>
+                        <width>487.154998779</width>
+                        <height>730.73248291</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
